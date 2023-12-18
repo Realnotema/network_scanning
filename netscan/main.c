@@ -1,10 +1,4 @@
 #include <stdio.h>          // < std(in/out/err)
-#include <stdlib.h>
-#include <sys/socket.h>     // < socket lib
-#include <arpa/inet.h>      // < for sizeof(sockaddr_in)
-#include <unistd.h>
-#include <string.h>
-#include <netdb.h>
 #include "netscan.h"
 
 void printerr(char *errmess) {
