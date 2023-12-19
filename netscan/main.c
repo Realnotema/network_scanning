@@ -1,4 +1,6 @@
 #include <stdio.h>          // < std(in/out/err)
+#include <stdlib.h>
+#include <string.h>
 #include "netscan.h"
 
 void printerr(char *errmess) {
@@ -15,6 +17,7 @@ void read_flag(char *argv[]) {
         scanTCPconnect(argv[2], argv[3]);
     } else if (strcmp(argv[1], "-sT") == 0) {
         printf("TCP SYN scanning is selected\n");
+        scanTCP_SYN (argv[2], argv[3]);
     } else printerr("Incorrect flag: --help for more information");
 }
 
