@@ -4,7 +4,7 @@
 #include "netscan.h"
 
 void printerr(char *errmess) {
-    perror(errmess);
+    fprintf(stderr, "%s\n", errmess);
     exit(1);
 }
 
