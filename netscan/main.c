@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
             break;
         case 2:
             if (strcmp(argv[1], "--help") == 0) {
-                printf("\nUse ./netscan <flag> <ip> <port>\n\n"
+                printf("\nUsage: ./netscan <flag> <ip> <port>\n\n"
                 "Flags:\n\t-U - to UDP scan\n\t-T - to TCP connect scan\n\t-sT - to TCP SYN scan\n"
                 "In this version you cannot combine flags\n\n");
             }
