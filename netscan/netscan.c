@@ -49,7 +49,7 @@ void scanTCP_SYN (char *ip, char *port) {
                 socklen_t optlen = sizeof(optval);
                 if (getsockopt(sockfd, SOL_SOCKET, SO_ERROR, &optval, &optlen) == 0) {
                     if (optval == 0) {
-                        printf("Port %d is available.\n", atoi(port));  // SYN+ACK flag getted
+                        printf("Port %d is available.\n", atoi(port));      // SYN+ACK flag getted
                         close(sockfd);
                         return;
                     } else {
